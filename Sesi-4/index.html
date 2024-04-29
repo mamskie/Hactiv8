@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+    <h1>Tugas: Menghitung Luas dan Keliling Lingkaran</h1>
+    <h2>1. Menghitung Luas dan Keliling Lingkaran</h2>
+    <p>Title: Menghitung Luas dan Keliling Lingkaran</p>
+
+    <h2>2. Input yang diperlukan untuk menghitung luas dan keliling lingkaran</h2>
+    <ul>
+        <li>let r = 5</li>
+        <li>let PI = 3.14</li>
+        <li>let luas = 0</li>
+        <li>let keliling = 0</li>
+    </ul>
+
+    <h2>3. Langkah Kalkulasi</h2>
+    <p>Langkah kalkulasi :</p>
+    <ul>
+        <li>luas = pi * (r*r)</li>
+        <li>keliling = 2 * pi * r</li>
+    </ul>
+
+    <h2>4. Instruksi untuk Menampilkan Hasil Kalkulasi</h2>
+    <p>Instruksi untuk tampilan hasil kalkulasi :</p>
+    <ul>
+        <li>console.log(luas)</li>
+        <li>console.log(keliling)</li>
+    </ul>
+
+    <h2>Hasil kalkulasi luas dan keliling lingkaran :</h2>
+    <ul>
+        <li id="luas"></li>
+        <li id="keliling"></li>
+    </ul>
+
+    <script>
+        let r = 6;
+        let pi = 3.14;
+        let luas = 0;
+        let keliling = 0;
+
+        luas = pi * (r * r);
+        keliling = 2 * pi * r;
+
+        document.getElementById("luas").innerHTML = "Luas lingkaran : " + luas;
+        document.getElementById("keliling").innerHTML = "Keliling lingkaran : " + keliling;
+
+        console.log("Luas lingkaran : " + luas);
+        console.log("Keliling lingkaran : " + keliling);
+    </script>
+</body>
+</html>
