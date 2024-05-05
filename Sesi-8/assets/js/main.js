@@ -348,18 +348,18 @@
   /**
    * Visitor Counter
    */
-  const countEl = document.getElementById('count');
-
-  updateVisitCount();
+  var countElement = document.getElementById('count');
+  var count = localStorage.getItem('visitorCount');
   
-  function updateVisitCount() {
-    fetch('https://api.countapi.xyz/update/mamskie.my.id/visits/?amount=1')
-      .then(res => res.json())
-        .then(res => {
-          countEl.innerHTML = res.value;
-        })
+  if (!count) {
+      count = 0;
   }
-
+  countElement.textContent = count; 
+  window.addEventListener('load', function() {
+      count++;
+      localStorage.setItem('visitorCount', count);
+      countElement.textContent = count;
+  });
    /**
     * Animated text
     */
