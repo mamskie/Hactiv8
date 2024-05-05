@@ -225,10 +225,7 @@ main {
   0% {
     opacity: 0.1;
   }
-  10%{
-    opacity: 1;
-  }
-  90% {
+  30%{
     opacity: 1;
   }
   100% {
