@@ -354,7 +354,6 @@
   
   function updateVisitCount() {
     fetch('https://api.countapi.xyz/update/mamskie.my.id/visits/?amount=1')
-')
       .then(res => res.json())
         .then(res => {
           countEl.innerHTML = res.value;
